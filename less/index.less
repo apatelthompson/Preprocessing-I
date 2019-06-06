@@ -80,6 +80,11 @@ html {
  h1 {
 	 font-size: @title;
 	 .border1();
+
+	 @media (max-width: 500px) {
+		 font-size: 3em;
+		 display: flex;
+	 }
  }
 
 	h2, h3 {
@@ -90,6 +95,7 @@ html {
  h4 {
 	 font-size: 2rem;
 	 .border1();
+	 border-bottom: 1px solid white;
  }
 
 p {
@@ -97,14 +103,24 @@ p {
 	.border1();
 }
 
+
 .top-section {
 	width: 100%;
-	height: 300px;
+	height: 325px;
 	display: flex;
 	background-color: @box1-color;
 	.border1();
 	color: white;
 	justify-content: center;
+
+	@media (max-width: 500px) {
+		 height: 600px;
+		 display: flex;
+		 flex-direction: row;
+		 flex-wrap: wrap;
+		 align-content: center;
+		 justify-content: center;
+		}
 
 	.bio-image {
 	width: 200px;
@@ -132,9 +148,9 @@ p {
 		padding: 10px;
 		margin: 20px;
 		border-radius: 4px;
-
-
 	}
+
+
 
 
 }
@@ -144,22 +160,14 @@ p {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	mar
 
 .summary {
-	width: 30%;
-	.border1();
-
-h2 {
-	display: flex;
-
+	padding: 20px;
 }
 
-
-}
 
  .list {
-	 width: 70%;
+	 width: 100%;
 	 .border1();
 
 	 h2 {
@@ -167,12 +175,9 @@ h2 {
 		 justify-content: center;
 	 }
 
-
 	 ul {
 		font-size: 1.5rem;
-
 	 }
-
 
 	 li {
 		 padding: 1rem;
@@ -180,31 +185,44 @@ h2 {
 		 display: flex;
 		 justify-content: center;
 	 }
-
  }
-
-
-
 }
 
 
-.experience {
+table {
 	.border1();
-
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-	width: 800px;
+
+ thead{
+	 margin-bottom: 2px;
+ }
+	.notes {
+		width: 60px;
+	}
 
 	th {
 		font-size: 2rem;
-		width: 90px;
+		width: 400px;
+		letter-spacing: 2px;
+		padding: 10px;
 	}
 
+	tr {
+		border-bottom: 1px solid @box2-color;
+
+	}
 
 
 	td {
 		font-size: 1.5rem;
-		width: 100px;
+		width: 400px;
+		padding: 10px;
+		text-align: center;
 	}
 
 

@@ -148,6 +148,12 @@ h1 {
   font-size: 4em;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3em;
+    display: flex;
+  }
+}
 h2,
 h3 {
   font-size: 2.5em;
@@ -156,6 +162,7 @@ h3 {
 h4 {
   font-size: 2rem;
   padding: 20px;
+  border-bottom: 1px solid white;
 }
 p {
   font-size: 1.5em;
@@ -163,12 +170,22 @@ p {
 }
 .top-section {
   width: 100%;
-  height: 300px;
+  height: 325px;
   display: flex;
   background-color: #207497;
   padding: 20px;
   color: white;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .top-section {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
 }
 .top-section .bio-image {
   width: 200px;
@@ -199,15 +216,11 @@ p {
   flex-direction: row;
   justify-content: center;
 }
-.bottom-section mar .summary {
-  width: 30%;
+.bottom-section .summary {
   padding: 20px;
 }
-.bottom-section mar .summary h2 {
-  display: flex;
-}
 .bottom-section .list {
-  width: 70%;
+  width: 100%;
   padding: 20px;
 }
 .bottom-section .list h2 {
@@ -223,19 +236,35 @@ p {
   display: flex;
   justify-content: center;
 }
-.experience {
+table {
   padding: 20px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: 800px;
 }
-.experience th {
+table thead {
+  margin-bottom: 2px;
+}
+table .notes {
+  width: 60px;
+}
+table th {
   font-size: 2rem;
-  width: 90px;
+  width: 400px;
+  letter-spacing: 2px;
+  padding: 10px;
 }
-.experience td {
+table tr {
+  border-bottom: 1px solid #023C55;
+}
+table td {
   font-size: 1.5rem;
-  width: 100px;
+  width: 400px;
+  padding: 10px;
+  text-align: center;
 }
 footer {
   width: 100%;
