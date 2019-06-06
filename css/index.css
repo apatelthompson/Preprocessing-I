@@ -1,1 +1,279 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+.border1 {
+  padding: 20px;
+}
+body {
+  padding: 20px;
+  font-family: Lato;
+}
+h1 {
+  font-size: 4em;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3em;
+    display: flex;
+  }
+}
+h2,
+h3 {
+  font-size: 2.5em;
+  padding: 20px;
+}
+h4 {
+  font-size: 2rem;
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+p {
+  font-size: 1.5em;
+  padding: 20px;
+}
+.top-section {
+  width: 100%;
+  height: 325px;
+  display: flex;
+  background-color: #207497;
+  padding: 20px;
+  color: white;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .top-section {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+}
+.top-section .bio-image {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+.top-section .top-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-section .intro {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-section button {
+  background-color: #35444B;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 4px;
+}
+.bottom-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bottom-section .summary {
+  padding: 20px;
+}
+.bottom-section .list {
+  width: 100%;
+  padding: 20px;
+}
+.bottom-section .list h2 {
+  display: flex;
+  justify-content: center;
+}
+.bottom-section .list ul {
+  font-size: 1.5rem;
+}
+.bottom-section .list li {
+  padding: 1rem;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+}
+table {
+  padding: 20px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+table thead {
+  margin-bottom: 2px;
+}
+table .notes {
+  width: 60px;
+}
+table th {
+  font-size: 2rem;
+  width: 400px;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+table tr {
+  border-bottom: 1px solid #023C55;
+}
+table td {
+  font-size: 1.5rem;
+  width: 400px;
+  padding: 10px;
+  text-align: center;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #023C55;
+  margin-top: 40px;
+}

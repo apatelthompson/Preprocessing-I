@@ -1,5 +1,5 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,8 +13,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -57,3 +57,186 @@ html, body {
     height: 100%;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+@font: Lato;
+
+@box1-color: #207497;
+@box2-color: #023C55;
+@title: 4em;
+@subtitle: 2.5em;
+
+.border1 {
+	padding: 20px;
+}
+
+ body {
+	 .border1();
+	 font-family: @font;
+ }
+
+ h1 {
+	 font-size: @title;
+	 .border1();
+
+	 @media (max-width: 500px) {
+		 font-size: 3em;
+		 display: flex;
+	 }
+ }
+
+	h2, h3 {
+		font-size: @subtitle;
+		.border1();
+	}
+
+ h4 {
+	 font-size: 2rem;
+	 .border1();
+	 border-bottom: 1px solid white;
+ }
+
+p {
+	font-size: 1.5em;
+	.border1();
+}
+
+
+.top-section {
+	width: 100%;
+	height: 325px;
+	display: flex;
+	background-color: @box1-color;
+	.border1();
+	color: white;
+	justify-content: center;
+
+	@media (max-width: 500px) {
+		 height: 600px;
+		 display: flex;
+		 flex-direction: row;
+		 flex-wrap: wrap;
+		 align-content: center;
+		 justify-content: center;
+		}
+
+	.bio-image {
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+}
+
+	.top-intro {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	.intro {
+		.border1();
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	button {
+		background-color: #35444B;
+		color: white;
+		padding: 10px;
+		margin: 20px;
+		border-radius: 4px;
+	}
+
+
+
+
+}
+
+.bottom-section {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+.summary {
+	padding: 20px;
+}
+
+
+ .list {
+	 width: 100%;
+	 .border1();
+
+	 h2 {
+		 display: flex;
+		 justify-content: center;
+	 }
+
+	 ul {
+		font-size: 1.5rem;
+	 }
+
+	 li {
+		 padding: 1rem;
+		 border:1px solid gray;
+		 display: flex;
+		 justify-content: center;
+	 }
+ }
+}
+
+
+table {
+	.border1();
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+ thead{
+	 margin-bottom: 2px;
+ }
+	.notes {
+		width: 60px;
+	}
+
+	th {
+		font-size: 2rem;
+		width: 400px;
+		letter-spacing: 2px;
+		padding: 10px;
+	}
+
+	tr {
+		border-bottom: 1px solid @box2-color;
+
+	}
+
+
+	td {
+		font-size: 1.5rem;
+		width: 400px;
+		padding: 10px;
+		text-align: center;
+	}
+
+
+}
+
+
+footer {
+	width: 100%;
+	height: 50px;
+	font-size: 1.5rem;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: @box2-color;
+	margin-top: 40px;
+}
