@@ -137,48 +137,114 @@ body {
 html {
   font-size: 62.5%;
 }
-h1,
-h2,
-h3,
-h4,
-p {
-  font-family: Lato, Arial, sans-serif;
-}
 .border1 {
   padding: 20px;
 }
 body {
   padding: 20px;
+  font-family: Lato;
+}
+h1 {
+  font-size: 4em;
+  padding: 20px;
+}
+h2,
+h3 {
+  font-size: 2.5em;
+  padding: 20px;
+}
+h4 {
+  font-size: 2rem;
+  padding: 20px;
+}
+p {
+  font-size: 1.5em;
+  padding: 20px;
 }
 .top-section {
   width: 100%;
-  height: 400px;
+  height: 300px;
   display: flex;
-  background-color: lightgray;
+  background-color: #207497;
   padding: 20px;
+  color: white;
+  justify-content: center;
 }
 .top-section .bio-image {
   width: 200px;
   height: 200px;
+  margin: 20px;
 }
 .top-section .top-intro {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
 }
-.top-section h1 {
-  font-size: 3rem;
+.top-section .intro {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.top-section h3 {
-  font-size: 2rem;
-}
-.top-section h4 {
-  font-size: 1.5rem;
+.top-section button {
+  background-color: #35444B;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 4px;
 }
 .bottom-section {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bottom-section mar .summary {
+  width: 30%;
+  padding: 20px;
+}
+.bottom-section mar .summary h2 {
+  display: flex;
+}
+.bottom-section .list {
+  width: 70%;
+  padding: 20px;
+}
+.bottom-section .list h2 {
+  display: flex;
+  justify-content: center;
+}
+.bottom-section .list ul {
+  font-size: 1.5rem;
+}
+.bottom-section .list li {
+  padding: 1rem;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+}
+.experience {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+}
+.experience th {
+  font-size: 2rem;
+  width: 90px;
+}
+.experience td {
+  font-size: 1.5rem;
+  width: 100px;
 }
 footer {
   width: 100%;
-  background-color: gray;
+  height: 50px;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #023C55;
+  margin-top: 40px;
 }
